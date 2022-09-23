@@ -50,6 +50,35 @@ In general, an e-commerce website allows people to buy and sell physical goods, 
 
  2. After enter Valid Email and Password, An successful Alert will be shown below login button. Then after 2 seconds, the page will redirect to index.Html.
 
+ > screenshots for Second Phase in Login Form:
+ 1. When user click on Login Button with Empty Email and Empty Password. First An alert will be shown with The Less No of Attempts as in:
+   ![image](img/SecondPhaseWhenUserInputEmptyValuesWillShowNumberofAttempts.jpg)
+
+  AFter user click Ok of Alert, Then will show Warning before login Input as in:
+
+  ![image](img/SecondPhaseWhenUserInputEmptyValuesWithWarningInLoginForm.png)
+
+ 2. With Empty Email and Invalid Password is enetered, First An alert will be shown with The Less No of Attempts as in:
+   ![image](img/SecondPhaseWhenUserInputEmptyEmail%26InvalidPasswordInLoginForm.jpg)
+
+   After User Click ok of Alert, Then will Show warning before Login Input as in:
+
+   ![image](img/SecondPhaseWhenUserInputEmptyEmail%26InvalidPasswordWithWarningLoginForm.png)
+
+3. With Invalid Email and Valid Password. First An alert will be shown with The Less No of Attempts as in:
+   ![image](img/SecondPhaseWhenUserInputInvalidEmail%26ValidPasswordLoginFormWithNoOfAttempts.jpg)
+
+   After User Click ok of Alert, Then will Show warning before Login Input as in:
+
+   ![image](img/SecondPhaseWhenUserInputInvalidEmail%26ValidPasswordLoginFormWithWarning.png)
+
+4. as below, when number of attempts is zero, The Email Input and Password Input will be disabled, and The user can continue only when refresh page.
+
+   ![image](img/SecondPhaseWhenUserInputInvalidEmail%26ValidPasswordLoginFormWithWarning.png)
+
+5. and So ON The warning still will be shown Until user Input Valid Email and Valid Password :)
+
+
 
 
 

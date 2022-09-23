@@ -24,6 +24,9 @@ html,body{
 #success{
     display: none;
 }
+#attempts{
+    display: none;
+}
 #about-us{
     height: 10vh;
 }
@@ -56,6 +59,7 @@ font-family: 'Pacifico', 'cursive';
     background-position: bottom right;
     background-size: contain;
     background-attachment:local;
+    height: 90vh;
     min-height: 100%;
 
 }

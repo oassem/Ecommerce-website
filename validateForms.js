@@ -20,26 +20,32 @@ function validateLogin(e){
     if( attempt == 0){
      Email.disabled = true;
      Pass.disabled=true;
+     var attempts=document.getElementById('attempts');
+     attempts.style.display='block';
     return true;
     }
-    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Email.value))){
-      errors.push('Invalid Email');
-    }
+   
     if((Email.value.length== 0) && ( Pass.value.length== 0)){
         errors.push('email and password are empty');
-    }
-
-    if((Email.value.length== 0)){
-        errors.push('email is empty');
-    }
-
-    if(( Pass.value.length== 0)){
-        errors.push('password is empty');
     }else{
-        ptrn=/^([a-zA-Z0-9]{8,})$/;
-        if(! ( ptrn.test(Pass.value))  ){
-        errors.push('Password must be Minimum 8 characters, at least 1 letter and 1 number:');
+       
+        
+        if((Email.value.length== 0)){
+            errors.push('email is empty');
+        }else if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Email.value))){
+            errors.push('Invalid Email');
+        }
+    
+        if(( Pass.value.length== 0)){
+            errors.push('password is empty');
+        }else{
+            ptrn=/^([a-zA-Z0-9]{8,})$/;
+            if(! ( ptrn.test(Pass.value))  ){
+            errors.push('Password must be Minimum 8 characters, at least 1 letter and 1 number:');
+        }
     }
+
+    
  
 
 }
