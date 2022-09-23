@@ -40,6 +40,19 @@ In general, an e-commerce website allows people to buy and sell physical goods, 
 
   8. SignUp Form in Laptop L View (1440px) as in:
     ![image](img/FirstPhaseSignUpFormWithLaptopView1440Px.png)
+ 
+## -------------------------------------------------------------------------------------------------------------------------------
+
+# Second Phase (Validate Login and SignUp Forms with Javascript) ^^:
+
+## Validate Login Form With Javascript:
+ 1. using 3 attempts to login,Every time User try to login an alert will be shown with the no of attempts Now,In the No.3 attempt The Inputs will be disabled. After The Inputs will be Enabled when user refresh the page.
+
+ 2. After enter Valid Email and Password, An successful Alert will be shown below login button. Then after 2 seconds, the page will redirect to index.Html.
+
+
+
+
 
 
 

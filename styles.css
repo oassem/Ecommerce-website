@@ -18,6 +18,18 @@ html,body{
     top: 0;
     left: 0;
 }
+#products{
+    height: 60vh;
+}
+#success{
+    display: none;
+}
+#about-us{
+    height: 10vh;
+}
+#contact-us{
+    height:10vh ;
+}
 .navbar-brand,#website-name{
 font-family: 'Pacifico', 'cursive';
 }
@@ -46,6 +58,10 @@ font-family: 'Pacifico', 'cursive';
     background-attachment:local;
     min-height: 100%;
 
+}
+.wrapper #errors{  
+    width:100%;
+    min-height: 6vh; 
 }
 .wrapper .logo img{
     max-width: 30%;
