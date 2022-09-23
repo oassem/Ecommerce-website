@@ -25,3 +25,8 @@ font-family: 'Pacifico', 'cursive';
 .navbar-toggler span + span + span{
     width: 22px;
 }
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
