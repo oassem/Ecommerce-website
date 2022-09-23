@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Poppins|Audiowide|Sofia|Trirong');
+
+html,body{
+    font-family:'Poppins','Trirong', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x:hidden ;
+    top: 0;
+    left: 0;
+}
+.navbar-brand{
+font-family: 'Pacifico', 'cursive';
+}
+.navbar-toggler span{
+    width: 22px;
+    height: 2px;
+    border: 1px;
+}
+.navbar-toggler span + span{
+    width: 22px;
+    margin-top: 4px;
+}
+.navbar-toggler span + span + span{
+    width: 22px;
+}
