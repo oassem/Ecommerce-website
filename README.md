@@ -7,7 +7,9 @@ In general, an e-commerce website allows people to buy and sell physical goods, 
   2. End Navbar.
   
 ## Build footer for Testing only:
-  1. using absolute position and bottom zero to make footer in the end of the page.
+  1. using Sticky position and bottom zero to make footer in the end of the page.
+
+## Build Responsive Login Form with Bootstrap.
 
   
  

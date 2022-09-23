@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico|Poppins|Audiowide|Sofia|Trirong');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Audiowide|Sofia|Trirong');
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40300%3B400%3B500%3B600%3B700%3B800%3B900&display=swap');
 
+/* variables */
+:root{
+--primary-font-family:'Poppins','Trirong',sans-serif;
+--light-white:#f5f8fa;
+--gray:#5e6278;
+--grey-1:#e3e3e3;
+}
 html,body{
-    font-family:'Poppins','Trirong', sans-serif;
+    font-family:var(--primary-font-family);
     font-size: 15px;
     line-height: 1.5;
     box-sizing: border-box;
@@ -10,7 +18,7 @@ html,body{
     top: 0;
     left: 0;
 }
-.navbar-brand{
+.navbar-brand,#website-name{
 font-family: 'Pacifico', 'cursive';
 }
 .navbar-toggler span{
@@ -26,7 +34,54 @@ font-family: 'Pacifico', 'cursive';
     width: 22px;
 }
 #footer{
-    position: absolute;
+    position: sticky;
     bottom: 0;
     width: 100%;
+}
+.wrapper{
+    padding: 0 0 10px;
+    background-image: url('img/bg.jpg');
+    background-position: bottom right;
+    background-size: contain;
+    background-attachment:local;
+    min-height: 100%;
+
+}
+.wrapper .logo img{
+    max-width: 30%;
+    border:1px solid #fff;
+    border-radius: 50%;
+}
+
+.wrapper input{
+    background-color: var(--light-white);
+    border-color: var(--light-white);
+    color: var(--grey);
+}
+.wrapper input:focus{
+    box-shadow: none;
+}
+.wrapper .password-info{
+font-size: 10px;
+}
+.wrapper .submit-btn{
+    padding:10px 15px;
+    font-weight: 500;
+}
+.wrapper .login_with{
+    padding:8px 15px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+.wrapper .submit-btn:focus,
+.wrapper .login_with:focus{
+box-shadow: none;
+}
+.wrapper .login_with:hover{
+background-color: var(--grey-1);
+border-color: var(--grey-1);
+}
+.wrapper .login_with img{
+    max-width: 8%;
 }
