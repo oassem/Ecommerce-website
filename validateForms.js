@@ -20,7 +20,7 @@ function validateLogin(e){
      Pass.disabled=true;
      var attempts=document.getElementById('attempts');
      attempts.style.display='block';
-    return true;
+    // return true;
     }
    
     if((Email.value.length== 0) && ( Pass.value.length== 0)){
@@ -109,7 +109,7 @@ if(errors.length > 0){
 
      var attempt_SignUp=document.getElementById('attempt_SignUp');
      attempt_SignUp.style.display='block';
-    return true;
+    // return true;
     }
    
     if((firstName.value.length== 0) && ( lastName.value.length== 0) && (email.value.length==0) && (password.value.length==0) &&(ConfirmPassword.value.length==0)){
@@ -146,7 +146,7 @@ if(errors.length > 0){
         }else{
             ptrn=/^([a-zA-Z]{3,})$/;
             if(! (ptrn.test(firstName.value))){
-               errorsSignUp.push('First Name must be Minimum 2 characters, at least 3 letters');
+               errorsSignUp.push('First Name must be Minimum 3 characters, at least 3 letters');
             }
         }
         if((lastName.value.length==0)){
@@ -154,7 +154,7 @@ if(errors.length > 0){
          }else{
              ptrn=/^([a-zA-Z]{3,})$/;
              if(! (ptrn.test(lastName.value))){
-                errorsSignUp.push('Last Name must be Minimum 2 characters, at least 3 letters');
+                errorsSignUp.push('Last Name must be Minimum 3 characters, at least 3 letters');
              }
          }
          if(check.value != 'on'){

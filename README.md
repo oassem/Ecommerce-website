@@ -111,6 +111,9 @@ In general, an e-commerce website allows people to buy and sell physical goods, 
 
 5. and So ON The warning still will be shown Until user Input Valid Inputs :)
 
+## -------------------------------------------------------------------------------------------------------------------------------
+
+# Third Phase (Authenticate with Javascript) ^^:
 
 
 
