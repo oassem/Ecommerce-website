@@ -128,6 +128,16 @@ In general, an e-commerce website allows people to buy and sell physical goods, 
   1. Using Session Storage, after user successfully login , Show cart with First Name of User In Navbar, Hide Login and SignUp from Navbar and add Logout in Navbar.
   2. If User click on Logout, LoginUser Session will be removed, Hide cart,hide logout , show login and show signUp in navbar :)
 
+> Screenshots of ThirdPhase:
+ 1. when user signUp with valid Data and successfully signUp , He will redirect to login form and Add New User with his Data to localstorage as in: 
+  ![image](img/ThirdPhaseAfterUserSignUpWithValidDataRedirectToLoginFormAndAddNewUserInLocalStorage.jpg)
+
+ 2. After User Login With Valid Data , Email and Password exist in Array Of Users in localStorage , Session will be created with firstName of User as in:
+  ![image](img/ThirdPhaseAfterUserLoginWithValidDataAndEmail%26PasswordAreExistInUsersInLocalStorageAndSessionwillBeCreated.jpg)
+
+ 3. When User Logout, `cart and Logout will be hide` , `login and signUp will be shown`  and session will be removed as in:
+   ![image](img/ThirdPhaseAfterUserClickOnLogout.jpg)
+ 
   
 
 
