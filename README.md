@@ -81,7 +81,7 @@ In general, an e-commerce website allows people to buy and sell physical goods, 
 ## Validate SignUp Form With Javascript:
  1. using 3 attempts to SignUp,Every time User try to SignUp an alert will be shown with the no of attempts Now,In the No.3 attempt The Inputs will be disabled. After The Inputs will be Enabled when user refresh the page.
 
- 2. After enter Valid Data, An successful Alert will be shown below SignUp button. Then after 2 seconds, the page will redirect to index.Html.
+ 2. After enter Valid Data, An successful Alert will be shown below SignUp button. Then after 2 seconds, the page will redirect to login.html.
 
  > screenshots for Second Phase in SignUp Form:
  1. When user click on Login Button with Empty Data. First An alert will be shown with The Less No of Attempts as in:
@@ -113,7 +113,22 @@ In general, an e-commerce website allows people to buy and sell physical goods, 
 
 ## -------------------------------------------------------------------------------------------------------------------------------
 
-# Third Phase (Authenticate with Javascript) ^^:
+# Third Phase (Add Users SignUp To localStorage & Login user to SessionStorage & Navbar edits) ^^:
+> In SignUp Form:
+  1. First we add SignUp User Data After Enter Valid Data as Object to UsersSignUp Array.
+  2. Add UsersSignUp Array to localStorage.
+  3. redirect The User To Login Page To Login Now.
+
+> In Login Form:
+  1. Add Inputs of Login User Data to LoginArray to compare with SignUp Array in localStorage.
+  2. by foreach on SignUp Array and Compare Email of LoginArray and Password of LoginArray With All Objects of signUp Array.
+  3. if Email & Password Matched with any object in SignUp Array,Session will be stored with Object of user `LoginUser` :) and  successful Alert will be shown in the form . after 2 seconds the page will redirect to index.html :) 
+
+> Edits in Navbar after Authenticate LoginUser:
+  1. Using Session Storage, after user successfully login , Show cart with First Name of User In Navbar, Hide Login and SignUp from Navbar and add Logout in Navbar.
+  2. If User click on Logout, LoginUser Session will be removed, Hide cart,hide logout , show login and show signUp in navbar :)
+
+  
 
 
 

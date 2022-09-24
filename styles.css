@@ -21,6 +21,12 @@ html,body{
 #products{
     height: 60vh;
 }
+#mycart,#logout{
+    display: none;
+}
+#login,#signUp{
+    display: block;
+}
 #success{
     display: none;
 }

@@ -1,5 +1,7 @@
 var attempt = 3; // Variable to count number of attempts.
 var attemptSignUp=3; // Variable to count number of attempts.
+var UsersSignUp=[];// Array to add Sign Up Users
+var LoginArray=[]; // Array to add Login User Data and Check if it's Right Or Not
 // Below function Executes on click of login button.
 function validateLogin(e){
     e.preventDefault();
@@ -61,11 +63,54 @@ if(errors.length > 0){
 
 
 }else{
-    form=document.getElementById('myForm');
+     // login array to check if data is right
+     LoginArray.push(
+        Email.value,
+        Pass.value
+    );
+    var ArrayToGetSignUpUsersFromLocalStorage=JSON.parse(localStorage.getItem('UsersSignUp'));
+    console.log(LoginArray);
+    //(2) ['lailaibrahim@gmail.com', 'laila123']
+    // 0 : "lailaibrahim@gmail.com"
+    // 1 : "laila123"
+    // length : 2
+    // [[Prototype]] : Array(0)
+    
+    console.log(ArrayToGetSignUpUsersFromLocalStorage);//[{…}]
+    // 0 : {First Name: 'Laila', Last Name: 'Ibrahim', Email: 'lailaibrahim@gmail.com', password: 'laila123', check Privacy: 'on'}
+    // length : 1
+    // [[Prototype]] :  Array(0)
+    
+    // Loop on ArrayToGetSignUpUsersFromLocalStorage to compare between email and password in login form with Email and Password in Sign Up Form
   
+    ArrayToGetSignUpUsersFromLocalStorage.forEach(User=> {
+        
+        for(var key in User){
+            if(key=='Email'){
+                console.log(key);
+                console.log(User.Email);
+                console.log(LoginArray[0]);
+
+                if(User.Email==LoginArray[0]){
+                    console.log(User.Email);
+                  if(User.password==LoginArray[1]){
+                    console.log(User.password);
+                    sessionStorage.setItem('LoginUser',User.FirstName);
+                   
+
+                  }
+                }
+             
+            }
+           console.log(`${key}: ${User[key]}`);
+        }
+    });
+    
+  if(sessionStorage.getItem('LoginUser')){
     console.log('submmited');
     var success = document.getElementById("success");
     success.style.display='block';
+   
     flag=true;
     if(flag){
         setInterval(() => {
@@ -73,7 +118,13 @@ if(errors.length > 0){
         window.location="index.html";// Redirecting to other page
         }, 2000);
     } 
-    return true;
+   
+    
+    // mycart.innerHTML='<a class="nav-link active text-dark text-muted text-capitalize"  href="mycart.html">MyCart</a>';
+    document.mycart.appendChild(element);
+  }
+   
+    // return true;
 } 
    }
 // ----------------------------------------------------------------------------------------------------------------
@@ -181,14 +232,51 @@ if(errorsSignUp.length > 0){
     console.log('submmited');
     var successSignUp = document.getElementById("successSignUp");
     successSignUp.style.display='block';
+    // Push to Users Sign Up Array
+    UsersSignUp.push({
+        "FirstName":firstName.value,
+        "LastName":lastName.value,
+        "Email":email.value,
+        "password":password.value,
+        "checkPrivacy":check.value
+    });
+    localStorage.setItem('UsersSignUp',JSON.stringify(UsersSignUp));
     flag=true;
     if(flag){
         setInterval(() => {
             // alert('Form Successfully Submitted');
-        window.location="index.html";// Redirecting to other page
+        window.location="login.html";// Redirecting to other page
         }, 2000);
     } 
     return true;
 } 
+
+   }
+   // after user successfully login , Show cart with First Name of User In Navbar, Hide Login and SignUp from Navbar and add Logout in Navbar
+   if(sessionStorage.getItem('LoginUser')){
+    LoginUser=sessionStorage.getItem('LoginUser');
+      var mycart=document.getElementById('mycart');
+      mycart.textContent=LoginUser+"'s Cart";
+      mycart.style.display='block';
+      var login=document.getElementById('login');
+      var SignUp=document.getElementById('signUp');
+      login.style.display='none';
+      SignUp.style.display='none';
+      var Logout=document.getElementById('logout');
+      Logout.style.display='block';
+   }
+   function LogOut(e){
+    e.preventDefault();
+    sessionStorage.removeItem('LoginUser');
+    var mycart=document.getElementById('mycart');
+   
+    mycart.style.display='none';
+    var login=document.getElementById('login');
+    var SignUp=document.getElementById('signUp');
+    login.style.display='block';
+    SignUp.style.display='block';
+    var Logout=document.getElementById('logout');
+    Logout.style.display='none';
+
 
    }
