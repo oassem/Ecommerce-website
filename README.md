@@ -78,6 +78,8 @@ In general, an e-commerce website allows people to buy and sell physical goods, 
 
 5. and So ON The warning still will be shown Until user Input Valid Email and Valid Password :)
 
+## Validate Login Form With Javascript:
+
 
 
 

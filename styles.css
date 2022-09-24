@@ -24,7 +24,13 @@ html,body{
 #success{
     display: none;
 }
+#successSignUp{
+    display: none;
+}
 #attempts{
+    display: none;
+}
+#attempt_SignUp{
     display: none;
 }
 #about-us{
@@ -59,11 +65,15 @@ font-family: 'Pacifico', 'cursive';
     background-position: bottom right;
     background-size: contain;
     background-attachment:local;
-    height: 90vh;
+    /* height: 90vh; */
     min-height: 100%;
 
 }
 .wrapper #errors{  
+    width:100%;
+    min-height: 6vh; 
+}
+.wrapper #errorsSignUp{
     width:100%;
     min-height: 6vh; 
 }
@@ -81,9 +91,9 @@ font-family: 'Pacifico', 'cursive';
 .wrapper input:focus{
     box-shadow: none;
 }
-.wrapper .password-info{
+/* .wrapper .password-info{
 font-size: 10px;
-}
+} */
 .wrapper .submit-btn{
     padding:10px 15px;
     font-weight: 500;
