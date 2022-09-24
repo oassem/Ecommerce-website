@@ -78,7 +78,39 @@ In general, an e-commerce website allows people to buy and sell physical goods, 
 
 5. and So ON The warning still will be shown Until user Input Valid Email and Valid Password :)
 
-## Validate Login Form With Javascript:
+## Validate SignUp Form With Javascript:
+ 1. using 3 attempts to SignUp,Every time User try to SignUp an alert will be shown with the no of attempts Now,In the No.3 attempt The Inputs will be disabled. After The Inputs will be Enabled when user refresh the page.
+
+ 2. After enter Valid Data, An successful Alert will be shown below SignUp button. Then after 2 seconds, the page will redirect to index.Html.
+
+ > screenshots for Second Phase in SignUp Form:
+ 1. When user click on Login Button with Empty Data. First An alert will be shown with The Less No of Attempts as in:
+   ![image](img/SecondPhaseSignUpWhenUserInputEmptyValuesWillShowNumberofAttempts.jpg)
+
+  AFter user click Ok of Alert, Then will show Warning before SignUp Input as in:
+
+  ![image](img/SecondPhaseSignUpWhenUserInputEmptyValuesWithWarningInLoginForm.png)
+
+ 2. With Valid Email, Valid FirstName, LastName and Invalid Confirm Password & Password is enetered, First An alert will be shown with The Less No of Attempts as in:
+   ![image](img/SecondPhaseWhenUserInputValidEmail&ValidFirstName&ValidLastName&InvalidPasswordInSignUpForm.jpg)
+
+   After User Click ok of Alert, Then will Show warning before SignUp Input as in:
+
+   ![image](img/SecondPhaseWhenUserInputValidEmail&ValidFirstName&ValidLastName&InvalidPasswordWithWarningSignUpForm.png)
+
+3. With Invalid Email, Invalid FirstName, Invalid LastName and Not Equal Password with Confirm Password. First An alert will be shown with The Less No of Attempts as in:
+   ![image](img/SecondPhaseWhenUserInputInvalidEmail&InvalidFirstName&InvalidLastName&NotEqualPasswordsSignUpFormWithNoOfAttempts.jpg)
+
+   After User Click ok of Alert, Then will Show warning before SignUp Input as in:
+
+   ![image](img/SecondPhaseWhenUserInputInvalidEmail&InvalidFirstName&InvalidLastName&NotEqualPasswordsSignUpFormWithNoOfAttemptsWithWarning.png)
+
+4. as below, when number of attempts is zero, The Inputs will be disabled, and The user can continue only when refresh page.
+
+   ![image](img/SecondPhaseWhenUserInputInvalidEmail&InvalidFirstName&InvalidLastName&NotEqualPasswordsSignUpFormWithNoOfAttemptsWithWarning.png)
+
+5. and So ON The warning still will be shown Until user Input Valid Inputs :)
+
 
 
 
