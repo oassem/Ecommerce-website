@@ -141,7 +141,8 @@ In general, an e-commerce website allows people to buy and sell physical goods, 
 ## -------------------------------------------------------------------------------------------------------------------------------
 
 # Fourth Phase (Include Navbar & Footer to all the files dynamic) ^^:
-> 1. make header.txt and footer.txt
+> How to include header and footer?
+  1. make header.txt and footer.txt
   2. Include header.txt in index.html or any html file by:
   `<script language="JavaScript" type="text/javascript" src="header.txt"></script>`
   3. Include footer.txt in index.html or any html file by:
