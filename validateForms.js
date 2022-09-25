@@ -2,7 +2,7 @@
 
 var attempt = 3; // Variable to count number of attempts.
 var attemptSignUp=3; // Variable to count number of attempts.
-var UsersSignUp=[];// Array to add Sign Up Users
+// var UsersSignUp=[];// Array to add Sign Up Users
 var LoginArray=[]; // Array to add Login User Data and Check if it's Right Or Not
 // Below function Executes on click of login button.
 function validateLogin(e){
@@ -234,15 +234,19 @@ if(errorsSignUp.length > 0){
     console.log('submmited');
     var successSignUp = document.getElementById("successSignUp");
     successSignUp.style.display='block';
+    // Parse any JSON previously stored in UsersSignUp
+    var UsersSignUp=JSON.parse(localStorage.getItem('UsersSignUp'));
+    if(UsersSignUp==null) UsersSignUp=[];
+    var User={
+        "FirstName":firstName.value,
+        "LastName":lastName.value,
+        "Email":email.value,
+        "password":password.value,
+        "checkPrivacy":check.value
+    };
     // Push to Users Sign Up Array
   
-        UsersSignUp.push({
-            "FirstName":firstName.value,
-            "LastName":lastName.value,
-            "Email":email.value,
-            "password":password.value,
-            "checkPrivacy":check.value
-        });
+        UsersSignUp.push(User);
    
        
     
