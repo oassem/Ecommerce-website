@@ -1,3 +1,5 @@
+
+
 var attempt = 3; // Variable to count number of attempts.
 var attemptSignUp=3; // Variable to count number of attempts.
 var UsersSignUp=[];// Array to add Sign Up Users
@@ -228,18 +230,22 @@ if(errorsSignUp.length > 0){
 
 }else{
     myform=document.getElementById('myform');
-  
+ 
     console.log('submmited');
     var successSignUp = document.getElementById("successSignUp");
     successSignUp.style.display='block';
     // Push to Users Sign Up Array
-    UsersSignUp.push({
-        "FirstName":firstName.value,
-        "LastName":lastName.value,
-        "Email":email.value,
-        "password":password.value,
-        "checkPrivacy":check.value
-    });
+  
+        UsersSignUp.push({
+            "FirstName":firstName.value,
+            "LastName":lastName.value,
+            "Email":email.value,
+            "password":password.value,
+            "checkPrivacy":check.value
+        });
+   
+       
+    
     localStorage.setItem('UsersSignUp',JSON.stringify(UsersSignUp));
     flag=true;
     if(flag){
@@ -280,3 +286,5 @@ if(errorsSignUp.length > 0){
 
 
    }
+
+

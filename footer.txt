@@ -1,0 +1,1 @@
+document.write('<footer id="footer" class="bg-warning text-center text-lg-start mb-0"><div class="text-center p-3">© 2020 Copyright: Laila</div></footer>')
