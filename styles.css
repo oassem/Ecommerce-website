@@ -1,27 +1,4 @@
- /* @import url('https://fonts.googleapis.com/css?family=Pacifico|Audiowide|Sofia|Trirong');
-@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40300%3B400%3B500%3B600%3B700%3B800%3B900&display=swap');  */
-
-/* variables */
-   /* :root{
---primary-font-family:'Poppins','Trirong',sans-serif;
---light-white:#f5f8fa;
---gray:#5e6278;
---grey-1:#e3e3e3;
-}
-html,body{
-    font-family:var(--primary-font-family);
-    font-size: 15px;
-    line-height: 1.5;
-    box-sizing: border-box;
-    margin: 0;
-    overflow-x:hidden ;
-    top: 0;
-    left: 0;
-}   */
-/* #products{
-    height: 60vh;
-} */
-#mycart,#logout{
+ #mycart,#logout{
     display: none;
 }
 #login,#signUp{
@@ -39,32 +16,6 @@ html,body{
 #attempt_SignUp{
     display: none;
 }
-/* #about-us{
-    height: 10vh;
-}
-#contact-us{
-    height:10vh ;
-} */
-/* .navbar-brand,#website-name{
-font-family: 'Pacifico', 'cursive';
-} */
-/* .navbar-toggler span{
-    width: 22px;
-    height: 2px;
-    border: 1px;
-} 
-.navbar-toggler span + span{
-    width: 22px;
-    margin-top: 4px;
-}
-.navbar-toggler span + span + span{
-    width: 22px;
-}  */
- /* #footer{
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-} */
 .wrapper{
     padding: 0 0 10px;
     background-image: url('img/bg.jpg');
@@ -121,11 +72,7 @@ border-color: var(--grey-1);
 .wrapper .login_with img{
     max-width: 8%;
 }
-#signUpbtn{
-    background-color: rgb(215, 102, 151);
-    color:white;
-}
-#loginbtn{
+#signUpbtn,#loginbtn{
     background-color: rgb(215, 102, 151);
     color:white;
 }

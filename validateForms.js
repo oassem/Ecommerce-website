@@ -1,5 +1,3 @@
-
-
 var attempt = 3; // Variable to count number of attempts.
 var attemptSignUp=3; // Variable to count number of attempts.
 // var UsersSignUp=[];// Array to add Sign Up Users
