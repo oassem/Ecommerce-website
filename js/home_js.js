@@ -79,7 +79,8 @@ function homePopulateData(category) {
 }
 
 function homeRedirect(e) {
-    window.location = './productDetails.html?id=' + e.nextElementSibling.innerText;
+    localStorage.setItem("selectedID", e.nextElementSibling.innerText);
+    window.location = './productDetails.html';
 }
 
 homePopulateData();
