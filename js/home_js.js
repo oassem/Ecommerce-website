@@ -58,8 +58,6 @@ function homePopulateData(category) {
     let htmlProduct = document.getElementById('homeProductMain');
     htmlProduct.innerHTML = null;
     localStorage.setItem("products", JSON.stringify(objectsArr));
-    // to read json object use ---> JSON.parse(localStorage.getItem("products"))
-    // arr.find((product) => product.id == "2").image);
     for (var i = 0; i < objectsArr.length; i++) {
         if (objectsArr[i].category == category || !category) {
             let htmlProductContent = `<div class="col-md-4 col-sm-12 mb-3">
