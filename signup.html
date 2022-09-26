@@ -1,117 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <!-- CDN Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <!-- CDN Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <!-- Omar style sheet for navbar and index page -->
-  <link rel="stylesheet" href="home_css.css">
+  <link rel="stylesheet" href="./css/home_css.css">
 </head>
+
 <body class="home">
   <!-- Header Include -->
-   <script language="JavaScript" type="text/javascript" src="header.txt"></script> 
-   <!-- End Header Include -->
-   
-      <!-- signUp Section -->
-     <section id="signup" class="wrapper">
-      <div class="container">
-         <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-6 col-xl-4 offset-xl-4 text-center">
-            <div class="logo">
-               <img src="img/logo.jpg" class="img-fluid" alt="logo">
-            </div>
-            <form class="rounded bg-white shadow p-5" id="myform" onsubmit="validateSignUp(event)">
-               <h3 class="text-dark fw-bolder fs-2 mb-1">Create An Account</h3>
-               <div class="fw-normal text-muted mb-1">
-                Already Have Account? <a href="login.html" class="text-primary fw-bold text-decoration-none">Sign In</a>
-               </div>
-               <div class="text-center text-muted text-uppercase mb-1">or</div>
-               <a href="#" class="btn btn-light login_with w-100 mb-1">
-                <img src="img/google-icon.svg" class="img-fluid me-2">Sign In with Google
-              </a>
-              <div class="form-floating mb-1">
-                <input type="text" class="form-control" id="floatingFirstName" placeholder="First Name">
-                <label for="floatingFirstName">First Name</label>
-             </div>
-              <div class="form-floating mb-1">
-                <input type="text" class="form-control" id="floatingLastName" placeholder="Last Name">
-                <label for="floatingLastName">Last Name</label>
-             </div>
-               <div class="form-floating mb-1">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Email Address</label>
-               </div>
-               <div class="form-floating mb-1">
-                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                  <label for="floatingPassword">Password</label>
-                  <!-- <span class="password-info mt-1">
+  <script language="JavaScript" type="text/javascript" src="./imports/header.txt"></script>
+  <!-- End Header Include -->
+
+  <!-- signUp Section -->
+  <section id="signup" class="wrapper">
+    <div class="container">
+      <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-6 col-xl-4 offset-xl-4 text-center">
+        <div class="logo">
+          <img src="./images/logo.jpg" class="img-fluid" alt="logo">
+        </div>
+        <form class="rounded bg-white shadow p-5" id="myform" onsubmit="validateSignUp(event)">
+          <h3 class="text-dark fw-bolder fs-2 mb-1">Create An Account</h3>
+          <div class="fw-normal text-muted mb-1">
+            Already Have Account? <a href="login.html" class="text-primary fw-bold text-decoration-none">Sign In</a>
+          </div>
+          <div class="text-center text-muted text-uppercase mb-1">or</div>
+          <a href="#" class="btn btn-light login_with w-100 mb-1">
+            <img src="./images/google-icon.svg" class="img-fluid me-2">Sign In with Google
+          </a>
+          <div class="form-floating mb-1">
+            <input type="text" class="form-control" id="floatingFirstName" placeholder="First Name">
+            <label for="floatingFirstName">First Name</label>
+          </div>
+          <div class="form-floating mb-1">
+            <input type="text" class="form-control" id="floatingLastName" placeholder="Last Name">
+            <label for="floatingLastName">Last Name</label>
+          </div>
+          <div class="form-floating mb-1">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email Address</label>
+          </div>
+          <div class="form-floating mb-1">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+            <!-- <span class="password-info mt-1">
                     Use 8 or more characters with a mix of letters, numbers & symbols.
                   </span> -->
-               </div>
-               <div class="form-floating mb-1">
-                <input type="password" class="form-control" id="floatingConfirmPassword" placeholder="Password">
-                <label for="floatingConfirmPassword">Confirm Password</label>
-             </div>
-             <div class="form-check d-flex align-items-center">
-              <input class="form-check-input" type="checkbox" id="gridCheck" checked>
-              <label for="form-check-label ms-2" for="gridCheck">
-                I agree <a href="#">Terms and Conditions</a>.
-              </label>
+          </div>
+          <div class="form-floating mb-1">
+            <input type="password" class="form-control" id="floatingConfirmPassword" placeholder="Password">
+            <label for="floatingConfirmPassword">Confirm Password</label>
+          </div>
+          <div class="form-check d-flex align-items-center">
+            <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+            <label for="form-check-label ms-2" for="gridCheck">
+              I agree <a href="#">Terms and Conditions</a>.
+            </label>
 
-             </div>
+          </div>
 
-             <div id="contSignUp" class="text-danger font-weight-bold bg-white">
-              <div id="warningcontSignUp" class="d-inline">
-                <span id="warningSignUp"></span>
-              </div>
-              <div id="errorsSignUp" class="d-inline">
+          <div id="contSignUp" class="text-danger font-weight-bold bg-white">
+            <div id="warningcontSignUp" class="d-inline">
+              <span id="warningSignUp"></span>
+            </div>
+            <div id="errorsSignUp" class="d-inline">
 
-              </div>
-             <div id="attempt_SignUp">
+            </div>
+            <div id="attempt_SignUp">
               <div class="alert alert-danger alert-dismissible fade show" id='alertT' role="alert">
                 <strong>You Finished Your Three attempts Now, if you want to retry please refresh the page :)</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-             </div>
-             <div id="successSignUp">
+            </div>
+            <div id="successSignUp">
               <div class="alert alert-warning alert-dismissible fade show" id='alertA' role="alert">
                 <strong>Form Successfully Submitted, Log in Now :)</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-             </div>
-           </div>
+            </div>
+          </div>
 
-              <button type="submit" id="signUpbtn" class="btn submit_btn w-100 my-1">Sign Up</button>
-             
-            </form>
-         </div>
+          <button type="submit" id="signUpbtn" class="btn submit_btn w-100 my-1">Sign Up</button>
 
+        </form>
       </div>
 
-    </section>
-    <!-- End SignUp section -->
+    </div>
 
-    <!-- Footer Section -->
-    <script language="JavaScript" type="text/javascript" src="footer.txt"></script>
-    <!-- End Footer Section -->
- 
-    <!-- Bootstrap files Of Omar :) -->
+  </section>
+  <!-- End SignUp section -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
-    <!-- Login And SignUp js functions -->
-<script src="validateForms.js"></script>
-    <!-- End OF Login And SignUp js functions -->
+  <!-- Footer Section -->
+  <script language="JavaScript" type="text/javascript" src="./imports/footer.txt"></script>
+  <!-- End Footer Section -->
+
+  <!-- Bootstrap files Of Omar :) -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Login And SignUp js functions -->
+  <script src="./js/validateForms.js"></script>
+  <!-- End OF Login And SignUp js functions -->
 </body>
+
 </html>
