@@ -1,0 +1,12 @@
+#navbarNav a, #footer {
+    color: white !important;
+}
+
+#navbarNav a:hover, #footer a:hover {
+    color: black !important;
+}
+
+#navbar, #footer {
+    background: rgb(215, 102, 151) !important;
+    background: linear-gradient(267deg, rgba(215, 102, 151, 1) 0%, rgba(148, 187, 233, 1) 100%) !important;
+}

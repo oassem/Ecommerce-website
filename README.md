@@ -148,6 +148,52 @@ In general, an e-commerce website allows people to buy and sell physical goods, 
   3. Include footer.txt in index.html or any html file by:
   `<script language="JavaScript" type="text/javascript" src="footer.txt"></script>`
 
+## -------------------------------------------------------------------------------------------------------------------------------
+
+# Fifth Phase (Add Navbar & Footer made by Omar :) ) ^^:
+> Navabr:
+ 1. change Logo.
+ 2. copy navbar & Footer from `Omar_sub` and add css file `home_css.css` 
+ 3. adjust some styles in styles.css to make signUp and login style suitable with navbar and footer.
+ 4. finish add Navbar & Footer
+
+> Add screenshots for the Fifth Phase of login:
+ 1. Login form in Mobile View as in:
+ ![image](img/FifthPhaseOfLoginFormInMobileView.png)  
+
+ 2. Login form in Tablet View as in:
+  ![image](img/FifthPahseOfLoginFormInTabletView.png)
+
+ 3. Login form in Laptop View 1024px as in:
+  ![image](img/FifthPhaseLoginFormOfLaptop1024px.png)
+
+ 4. Login Form in Laptop View 1440px as in:
+  ![image](img/FifthLoginFormOfLaptopView1440px.png)
+
+> Add Screenshots for the fifth Phase of SignUp:
+ 1. SignUp form in Mobile View As in:
+  ![image](img/FifthPhaseOfSignUpFormInMobileView.png)  
+
+ 2. SignUp form in Tablet View as in:
+  ![image](img/FifthPhaseOfSignUpFormInTabletView.png)
+
+ 3. SignUp form in Laptop View 1024px as in:
+  ![image](img/FifthPhaseOfSignUpFormInLaptopView1024PX.png)
+
+ 4. SignUp Form in Laptop View 1440px as in:
+  ![image](img/FifthLoginFormOfLaptopView1440px.png)
+
+## -------------------------------------------------------------------------------------------------------------------------------
+
+# Sixth Pahse (Sign In with Google or facebook or Linkedin ) ^^:
+> Waiting for the others to finish their pages and I will setup domain and add  it :) 
+
+
+
+
+
+
+
 
 
 

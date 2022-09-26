@@ -1,1 +1,1 @@
-document.write('<footer id="footer" class="bg-warning text-center text-lg-start mb-0"><div class="text-center p-3">© 2020 Copyright: Laila</div></footer>')
+document.write('<footer class="text-center text-lg-start bg-light text-muted" id="footer"><div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);"> © 2022 Copyright:<a class="text-reset fw-bold" href="index.html" style="text-decoration: none">&nbsp;MLMON.com</a></div></footer>')

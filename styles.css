@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico|Audiowide|Sofia|Trirong');
-@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40300%3B400%3B500%3B600%3B700%3B800%3B900&display=swap');
+ /* @import url('https://fonts.googleapis.com/css?family=Pacifico|Audiowide|Sofia|Trirong');
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40300%3B400%3B500%3B600%3B700%3B800%3B900&display=swap');  */
 
 /* variables */
-:root{
+   /* :root{
 --primary-font-family:'Poppins','Trirong',sans-serif;
 --light-white:#f5f8fa;
 --gray:#5e6278;
@@ -17,10 +17,10 @@ html,body{
     overflow-x:hidden ;
     top: 0;
     left: 0;
-}
-#products{
+}   */
+/* #products{
     height: 60vh;
-}
+} */
 #mycart,#logout{
     display: none;
 }
@@ -39,39 +39,39 @@ html,body{
 #attempt_SignUp{
     display: none;
 }
-#about-us{
+/* #about-us{
     height: 10vh;
 }
 #contact-us{
     height:10vh ;
-}
-.navbar-brand,#website-name{
+} */
+/* .navbar-brand,#website-name{
 font-family: 'Pacifico', 'cursive';
-}
-.navbar-toggler span{
+} */
+/* .navbar-toggler span{
     width: 22px;
     height: 2px;
     border: 1px;
-}
+} 
 .navbar-toggler span + span{
     width: 22px;
     margin-top: 4px;
 }
 .navbar-toggler span + span + span{
     width: 22px;
-}
-#footer{
+}  */
+ /* #footer{
     position: sticky;
     bottom: 0;
     width: 100%;
-}
+} */
 .wrapper{
     padding: 0 0 10px;
     background-image: url('img/bg.jpg');
-    background-position: bottom right;
-    background-size: contain;
+    background-position: top right;
+    background-size: cover;
     background-attachment:local;
-    /* height: 90vh; */
+     height: 170vh; 
     min-height: 100%;
 
 }
@@ -97,9 +97,9 @@ font-family: 'Pacifico', 'cursive';
 .wrapper input:focus{
     box-shadow: none;
 }
-/* .wrapper .password-info{
+.wrapper .password-info{
 font-size: 10px;
-} */
+} 
 .wrapper .submit-btn{
     padding:10px 15px;
     font-weight: 500;
@@ -120,4 +120,12 @@ border-color: var(--grey-1);
 }
 .wrapper .login_with img{
     max-width: 8%;
+}
+#signUpbtn{
+    background-color: rgb(215, 102, 151);
+    color:white;
+}
+#loginbtn{
+    background-color: rgb(215, 102, 151);
+    color:white;
 }
