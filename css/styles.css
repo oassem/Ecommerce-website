@@ -1,0 +1,95 @@
+#mycart, #logout {
+    display: none;
+}
+
+#login, #signUp {
+    display: block;
+}
+
+#success {
+    display: none;
+}
+
+#successSignUp {
+    display: none;
+}
+
+#attempts {
+    display: none;
+}
+
+#attempt_SignUp {
+    display: none;
+}
+
+.wrapper {
+    padding: 0 0 10px;
+    background-image: url('../images/bg.jpg');
+    background-position: top right;
+    background-size: cover;
+    background-attachment: local;
+    height: 170vh;
+    min-height: 100%;
+
+}
+
+.wrapper #errors {
+    width: 100%;
+    min-height: 6vh;
+}
+
+.wrapper #errorsSignUp {
+    width: 100%;
+    min-height: 6vh;
+}
+
+.wrapper .logo img {
+    max-width: 30%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.wrapper input {
+    background-color: var(--light-white);
+    border-color: var(--light-white);
+    color: var(--grey);
+}
+
+.wrapper input:focus {
+    box-shadow: none;
+}
+
+.wrapper .password-info {
+    font-size: 10px;
+}
+
+.wrapper .submit-btn {
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.wrapper .login_with {
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.wrapper .submit-btn:focus,
+.wrapper .login_with:focus {
+    box-shadow: none;
+}
+
+.wrapper .login_with:hover {
+    background-color: var(--grey-1);
+    border-color: var(--grey-1);
+}
+
+.wrapper .login_with img {
+    max-width: 8%;
+}
+
+#signUpbtn, #loginbtn {
+    background-color: rgb(215, 102, 151);
+    color: white;
+}
