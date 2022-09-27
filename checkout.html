@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- git@github.com:oassem/Ecommerce-website.git -->
+    <link rel="stylesheet" href="checkout.css">
+
+</head>
+
+<body>
+
+    <div>
+        <div class="container">
+            <h4>Products Summary:</h4>
+            <div class="summary">
+                <div class="items">
+                    <h3>Item Name</h3>
+                    <ul>
+                        <li>
+                            iPhone
+                        </li>
+                    </ul>
+                </div>
+                <div class="items">
+                    <h3>Item Price</h3>
+                    <ul>
+                        <li>
+                            $100
+                        </li>
+                    </ul>
+                </div>
+                <div class="items">
+                    <h3>Quantity</h3>
+                    <ul>
+                        <li>
+                            2
+                        </li>
+                    </ul>
+                </div>
+                <div class="items">
+                    <h3>Item Total</h3>
+                    <ul>
+                        <li>
+                            $200
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="total" style="float: right;">$200</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <h4>Delivery Details:</h4>
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="fullname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="phone" name="phonenumber">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="address">Address</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="address" name="address" style="height:100px"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="btn">
+        <button class="backCart">Back to Cart</button>
+        <button class="confirmPurchase">Confirm Purchase</button>
+
+    </div>
+</body>
+
+</html>
