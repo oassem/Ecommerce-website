@@ -24,10 +24,19 @@ function displayFunc () {
           <p class="lead text-bg-light text-dark fw-bold fs-5 text-center">SPECIFICATIONS</p>
           <p class="fs-6">  ${productArr[idNumber].fullDescription} </p>
           <div class="d-flex justify-content-left"> 
-            <button class="btn btn-success btn-lg my-0 mx-auto"> Add to cart </button>
+            <button class="btn btn-success btn-lg my-0 mx-auto" onclick="check()"> Add to cart </button>
           </div>
     </div>`
     
           productPage.innerHTML += productDisplay
 } 
 displayFunc();
+
+function check(){
+  if(sessionStorage.getItem('LoginUser')){
+    window.location = './cart.html';
+  }else{
+    window.location = './signup.html';
+
+  }
+}
