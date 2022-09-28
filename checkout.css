@@ -1,6 +1,17 @@
-.summary {
+.summary,
+.itm {
     display: inline-flex;
     display: flex;
+
+}
+
+.titles h3 {
+    margin-inline: 5%;
+
+}
+
+h6 {
+    margin-inline: 9%;
 }
 
 .items {
