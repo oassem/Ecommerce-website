@@ -14,72 +14,85 @@
 
 /* Shopping Cart */
 
-#cart-container{
+#cart-container {
     display: flex;
 }
-#cart-container table{
+
+#cart-container table {
     border-collapse: collapse;
-    width: 100%;                
-}
-#cart-container table thead{
-   font-weight: 700;
-   color: white;
-   background: rgb(215, 102, 151) !important;
-   background: linear-gradient(267deg, rgba(215, 102, 151, 1) 0%, rgba(148, 187, 233, 1) 100%) !important;
-}
-#cart-container table thead td{
-   
-   border: none;
-   padding: 10px;
-}
-#cart-container table td{
-   border: 1px solid grey;
-   text-align: center;
-}
-#cart-container table td:nth-child(1){
-width: 100px;
-}
-#cart-container table td:nth-child(2),
-#cart-container table td:nth-child(3){
-width: 200px;
-}
-#cart-container table td:nth-child(4),
-#cart-container table td:nth-child(5),
-#cart-container table td:nth-child(6){
-width: 170px;
+    width: 100%;
 }
 
-#cart-container table tbody img{
+#cart-container table thead {
+    font-weight: 700;
+    color: white;
+    background: rgb(215, 102, 151) !important;
+    background: linear-gradient(267deg, rgba(215, 102, 151, 1) 0%, rgba(148, 187, 233, 1) 100%) !important;
+}
+
+#cart-container table thead td {
+
+    border: none;
+    padding: 10px;
+}
+
+#cart-container table td {
+    border: 1px solid grey;
+    text-align: center;
+}
+
+#cart-container table td:nth-child(1) {
+    width: 100px;
+}
+
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3) {
+    width: 200px;
+}
+
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6) {
+    width: 170px;
+}
+
+#cart-container table tbody img {
     width: 100px;
     height: 80px;
     object-fit: cover;
 }
+
 #cart-container table tbody {
     color: midnightblue;
 }
-#cart-container i{
+
+#cart-container i {
     color: midnightblue;
     cursor: pointer;
 }
-#cart-bottom .total{
+
+#cart-bottom .total {
     border: 1px solid grey;
 }
-#cart-bottom .total h5{
+
+#cart-bottom .total h5 {
     background: rgb(215, 102, 151) !important;
-    background: linear-gradient(267deg, rgba(215, 102, 151, 1) 0%, rgba(148, 187, 233, 1) 100%) !important;;
+    background: linear-gradient(267deg, rgba(215, 102, 151, 1) 0%, rgba(148, 187, 233, 1) 100%) !important;
+    ;
     color: white;
     border: none;
-    padding:6px 12px;
+    padding: 6px 12px;
     font-weight: 700;
 }
-#cart-bottom .total .title{
+
+#cart-bottom .total .title {
     padding: 0 12px;
     color: midnightblue;
 }
-#cart-bottom .total button{
+
+#cart-bottom .total button {
     margin: 12px;
     background: midnightblue;
-    color:white;
+    color: white;
     border: none;
 }
-
