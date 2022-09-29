@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,67 +10,14 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/home_css.css">
     <link rel="stylesheet" href="./css/checkout.css">
-    <script>
-
-
-
-
-        //         const containerItems = document.querySelector('.scripter');
-
-        //         items.forEach(function (item, i) {
-
-        // const html = `
-        //         <div class="itm">
-        //             <h6>${itemName}</h6>
-        //             <h6>$<span class="price">${itemPrice}</span></h6>
-        //             <h6>${quantity}</h6>
-        //             <h6>$<span class="itemTotal">${ItemTotal}</span></h6>
-        //         </div>
-        //         <hr>
-        // `;
-
-        var cartArray = JSON.parse(localStorage.getItem('cart_items'));
-
-        var container = document.querySelector('.scripter');
-        var tbody = document.getElementById("tbody");
-        var itemName = document.getElementById('itemName');
-        var itemPrice = document.getElementById('itemPrice');
-        var quantity = document.getElementById('quantity');
-        var total = document.getElementById('total');
-        console.log(cartArray);
-        cartArray.forEach((element, index) => {
-            itemName.innerHTML = element.Product;
-            console.log(element);
-            //  add title 
-
-            tbody.appendChild(itemName);
-
-            //item price
-            itemPrice.innerHTML = element.Price;
-            tbody.appendChild(itemPrice);
-            //items quantity
-            quantity.innerHTML = element.Quantity;
-            tbody.appendChild(quantity);
-
-            //total per item  
-            total.innerHTML = element.Total;
-            tbody.appendChild(total);
-            // document.getElementById('tbody').innerHTML += div;
-        });
-        container.appendChild(tbody);
-
-
-    </script>
 </head>
-
 <body>
-    
+    <script language="JavaScript" type="text/javascript" src="./imports/header.txt"></script>
     <div>
         <div style="margin-top:4%">
             <div class="container-sm position-relative mb-5 bg-light">
                 <div class="prt d-print-inline-block pt-1 p-5">
                     <div class="summary titles">
-
                     </div><br>
                     <hr>
                     <div class="scripter">
@@ -80,7 +26,6 @@
                             <h4 id="itemPrice"></h4>
                             <h4 id="quantity"></h4>
                             <h4 id="total"></h4>
-
                         </div>
                         <!-- <table width="100%">
                             <thead>
@@ -185,7 +130,33 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
     <script src="./js/validateForms.js"></script>
-    <script language="JavaScript" type="text/javascript" src="./imports/header.txt"></script>
+    <script>
+        var cartArray = JSON.parse(localStorage.getItem('cart_items'));
+        var container = document.querySelector('.scripter');
+        var tbody = document.getElementById("tbody");
+        var itemName = document.getElementById('itemName');
+        var itemPrice = document.getElementById('itemPrice');
+        var quantity = document.getElementById('quantity');
+        var total = document.getElementById('total');
+        console.log(cartArray);
+        cartArray.forEach((element, index) => {
+            itemName.innerHTML = element.Product;
+            console.log(element);
+            //  add title 
+            tbody.appendChild(itemName);
+            //item price
+            itemPrice.innerHTML = element.Price;
+            tbody.appendChild(itemPrice);
+            //items quantity
+            quantity.innerHTML = element.Quantity;
+            tbody.appendChild(quantity);
+            //total per item  
+            total.innerHTML = element.Total;
+            tbody.appendChild(total);
+            // document.getElementById('tbody').innerHTML += div;
+        });
+        container.appendChild(tbody);
+    </script>
 </body>
 
 </html>
