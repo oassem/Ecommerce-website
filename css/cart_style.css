@@ -26,13 +26,10 @@
 #cart-container table thead {
     font-weight: 700;
     color: white;
-    background: rgb(215, 102, 151) !important;
-    background: linear-gradient(267deg, rgba(215, 102, 151, 1) 0%, rgba(148, 187, 233, 1) 100%) !important;
+    background: midnightblue;
 }
 
 #cart-container table thead td {
-
-    border: none;
     padding: 10px;
 }
 
@@ -43,6 +40,7 @@
 
 #cart-container table td:nth-child(1) {
     width: 100px;
+    border-radius: 10px 0 0 10px;
 }
 
 #cart-container table td:nth-child(2),
@@ -54,6 +52,10 @@
 #cart-container table td:nth-child(5),
 #cart-container table td:nth-child(6) {
     width: 170px;
+}
+
+#cart-container table td:last-child {
+    border-radius: 0 10px 10px 0;
 }
 
 #cart-container table tbody img {
@@ -72,12 +74,11 @@
 }
 
 #cart-bottom .total {
-    border: 0.5px solid rgba(148, 187, 233, 1);
+    border: 0.5px solid midnightblue;
 }
 
 #cart-bottom .total h5 {
-    background: rgb(215, 102, 151) !important;
-    background: linear-gradient(267deg, rgba(215, 102, 151, 1) 0%, rgba(148, 187, 233, 1) 100%) !important;
+    background: midnightblue !important;
     color: white;
     border: none;
     padding: 6px 12px;
@@ -94,6 +95,11 @@
     background: midnightblue;
     color: white;
     border: none;
+}
+
+#cart-bottom .total button:hover {
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 #cart-container table tr td {
