@@ -4,7 +4,7 @@ if (localStorage.getItem("cart") === null) {
     localStorage.setItem("cart", JSON.stringify(cartArr));
 }
 
-// initalize some variables
+// initalize some important variables
 let totalPriceOfAllObjectsInCart = 0;
 let objectsArr = JSON.parse(localStorage.getItem("products"));
 let tempArr = JSON.parse(localStorage.getItem("cart"));
@@ -34,12 +34,12 @@ function setPageContent() {
     tempArr.forEach((e, index) => {
         let tr = document.createElement('tr');
         let remove_td = document.createElement('td');
-        remove_td.innerHTML = `<i data-id="${e.id}" onclick="removeElement('${index}')" class="remove_btn  fas fa-times-circle" aria-hidden="true"></i>`;
+        remove_td.innerHTML = `<i data-id="${e.id}" onclick="removeElement('${index}')" class="remove_btn  fas fa-times-circle"></i>`;
         tr.appendChild(remove_td);
 
         //add image
         let img_td = document.createElement('td');
-        img_td.innerHTML = `<img class="card-img-top" src="${e.image}">`;
+        img_td.innerHTML = `<img class="card-img-top rounded mt-2" src="${e.image}">`;
         tr.appendChild(img_td);
 
         //add title 
@@ -49,29 +49,29 @@ function setPageContent() {
 
         //item price
         let price_td = document.createElement("td");
-        price_td.textContent = e.price + " EGP";
+        price_td.textContent = numberWithCommas(e.price) + " EGP";
         tr.appendChild(price_td);
 
-        //items quantity
+        //item quantity
         let qty_td = document.createElement('td');
-        qty_td.innerHTML = `<i data-id="${e.id}" class="decrease fas fa-minus-circle" aria-hidden="true" onclick='dec(${index})'></i>
+        qty_td.innerHTML = `<i data-id="${e.id}" class="decrease fas fa-minus-circle mx-2" onclick='dec(${index})'></i>
                                <span>${e.quantity}</span>
-                               <i data-id="${e.id}" class="increase fas fa-plus-circle" aria-hidden="true" onclick='inc(${index})'></i>`;
+                               <i data-id="${e.id}" class="increase fas fa-plus-circle mx-2" onclick='inc(${index})'></i>`;
         tr.appendChild(qty_td);
 
         //total per item  
         let total_td = document.createElement("td");
-        total_td.textContent = e.price * e.quantity + " EGP";
+        total_td.textContent = numberWithCommas(e.price * e.quantity) + " EGP";
         tr.appendChild(total_td);
         tbody.appendChild(tr);
     });
 
     let b_title = document.createElement('div');
-    b_title.innerHTML = `<div class="total col-lg-6 col-md-6 col-12">
-    <h5>Total</h5>
+    b_title.innerHTML = `<div class="total col-lg-6 col-md-6 col-12 rounded" style='margin-top:8%'>
+    <h5 class='rounded-top mb-3'>Total</h5>
     <div class="title d-flex justify-content-between">
         <h6>Subtotal</h6>
-        <p>${getTotalPrice()} EGP</p>
+        <p>${numberWithCommas(getTotalPrice())} EGP</p>
     </div>
 
     <div class="title d-flex justify-content-between">
@@ -81,10 +81,10 @@ function setPageContent() {
     <hr class="second-hr">
     <div class="title d-flex justify-content-between mb-2">
         <h6>Total</h6>
-        <p>${totalPriceOfAllObjectsInCart + 50} EGP</p>
+        <p><b>${numberWithCommas(totalPriceOfAllObjectsInCart + 50)} EGP</b></p>
     </div> 
     <a href="index.html"><button class="home_btn btn btn-primary mt-1 ml-auto"></i> Back To Home</button></a> 
-    <button class="proceed_btn btn btn-primary mt-1" onclick='cartRedirect()'>Proceed To checkout</button>
+    <button class="proceed_btn btn btn-primary mt-1" onclick='cartRedirect()'>Proceed To Checkout</button>
     </div>`;
     bsection.appendChild(b_title);
 }
@@ -121,6 +121,10 @@ function inc(index) {
 function cartRedirect() {
     localStorage.setItem("totalPrice", totalPriceOfAllObjectsInCart);
     window.location = './checkout.html';
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 setPageContent();

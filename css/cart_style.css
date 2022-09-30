@@ -72,13 +72,12 @@
 }
 
 #cart-bottom .total {
-    border: 1px solid grey;
+    border: 0.5px solid rgba(148, 187, 233, 1);
 }
 
 #cart-bottom .total h5 {
     background: rgb(215, 102, 151) !important;
     background: linear-gradient(267deg, rgba(215, 102, 151, 1) 0%, rgba(148, 187, 233, 1) 100%) !important;
-    ;
     color: white;
     border: none;
     padding: 6px 12px;
@@ -95,4 +94,8 @@
     background: midnightblue;
     color: white;
     border: none;
+}
+
+#cart-container table tr td {
+    border: 0px;
 }

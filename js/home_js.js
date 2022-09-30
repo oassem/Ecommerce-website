@@ -41,7 +41,7 @@ function homePopulateData(category) {
             title: "Samsung Galaxy A23",
             image: "./images/M2.jpg",
             price: 6200,
-            miniDescription: `Samsung Galaxy A23 Dual SIM Blue 6GB RAM 128GB 4G, Dual SIM Mobile Phone, Awesome White`,
+            miniDescription: `Samsung Galaxy A23 Dual SIM Blue 6GB RAM 128GB 4G, Dual SIM Mobile Phone, Awesome White + Blue`,
             fullDescription: `Feast your eyes on vibrant details with the FHD+ Super AMOLED display. With the expansive 6.5-inch Infinity-O Display, enjoy vivid outdoor visibility up to 800 nits while reducing blue light with the Eye Comfort Shield.`
         },
         {
@@ -50,7 +50,7 @@ function homePopulateData(category) {
             title: "Samsung Galaxy A53",
             image: "./images/M3.jpg",
             price: 12300,
-            miniDescription: `Samsung Galaxy A53 5G Mobile Phone SIM Free Android Smartphone, 256GB, 8GB RAM, Dual SIM Mobile Phone, Awesome Blue`,
+            miniDescription: `Samsung Galaxy A53 5G Mobile Phone SIM Free Android Smartphone, 256GB, 8GB RAM, Dual SIM Mobile Phone`,
             fullDescription: `Time to get to work. Powered with a 5nm Octa-core processor, your Galaxy is built to handle heavy-duty multitasking. RAM Plus reads your usage patterns and provides extra virtual RAM for an additional boost.`
         }
     ];
