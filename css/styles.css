@@ -1,5 +1,6 @@
 #mycart, #logout {
     display: none;
+   
 }
 
 #login, #signUp {
@@ -92,4 +93,19 @@
 #signUpbtn, #loginbtn {
     background-color: rgb(215, 102, 151);
     color: white;
+}
+.bshop:after{
+    content:attr(value);
+    font-size:16px;
+    color: #fff;
+    background:#0D6EFD;
+    border-radius:50%;
+    padding:0 10px;
+    margin-left: 5px;
+    /* margin-left:5px; */
+    /* padding: 0 10px;
+    position:relative;
+    left:-8px;
+    top:-10px; */
+    opacity:0.9;
 }

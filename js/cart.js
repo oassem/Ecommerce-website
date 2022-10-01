@@ -3,8 +3,6 @@ if (localStorage.getItem("cart") === null) {
     let cartArr = [];
     localStorage.setItem("cart", JSON.stringify(cartArr));
 }
-
-// initalize some important variables
 let totalPriceOfAllObjectsInCart = 0;
 let objectsArr = JSON.parse(localStorage.getItem("products"));
 let tempArr = JSON.parse(localStorage.getItem("cart"));
